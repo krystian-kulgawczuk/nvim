@@ -84,3 +84,6 @@ vim.opt.splitright = true
 
 -- blinking cursor
 set.guicursor = "n-v-c:blinkon100"
+
+-- center cursor
+set.scrolloff = 50
