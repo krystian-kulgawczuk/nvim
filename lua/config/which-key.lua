@@ -15,6 +15,7 @@ wk.register({
     f = { "<cmd>Telescope find_files<cr>", "Find File" },
     p = { "<cmd>NvimTreeToggle<cr>", "Toggle Filetree" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+    a = { "<cmd>wa<cr>", "Save all Buffers" },
     s = { "<cmd>w<cr>", "Save Buffer" },
     z = { "<cmd>Telescope zoxide list<CR>", "Zoxide" },
   },
@@ -36,4 +37,10 @@ wk.register({
     name = "Git",
     b = { "<cmd>:GitBlameToggle<cr>", "Blame" },
   },
+  q = {
+    name = "Quit",
+    q = { "<cmd>xa<cr>", "Safe Quit" },
+    s = { "<cmd>qa<cr>", "Quit with Buffer Check" },
+    z = { "<cmd>qa<cr>", "Force quit" },
+  }
 }, { prefix = "<leader>", mode = "n", default_options })
